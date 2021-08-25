@@ -299,6 +299,7 @@ h4 {
 .header__body.active {
   opacity: 1;
   visibility: visible;
+  overflow: auto;
 }
 
 .header__logo {
@@ -396,7 +397,7 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 -17;
+  margin: 50px 0 -17px;
 }
 
 .menu__list li a {
@@ -1319,8 +1320,8 @@ h4 {
   color: #999;
   line-height: 28px;
   margin-bottom: 30px;
-  -webkit-box-shadow: 15px 11px 48px rgba(0, 0, 0, 0.06);
-          box-shadow: 15px 11px 48px rgba(0, 0, 0, 0.06);
+  -webkit-box-shadow: 5px 11px 28px #999;
+          box-shadow: 5px 11px 28px #999;
   border-radius: 7px;
   padding: 30px;
 }
@@ -1330,8 +1331,8 @@ h4 {
   color: #999;
   width: 100%;
   margin-bottom: 30px;
-  -webkit-box-shadow: 15px 11px 48px rgba(0, 0, 0, 0.06);
-          box-shadow: 15px 11px 48px rgba(0, 0, 0, 0.06);
+  -webkit-box-shadow: 5px 11px 18px #999;
+          box-shadow: 5px 11px 18px #999;
   border-radius: 7px;
   padding: 30px;
 }
@@ -1984,7 +1985,7 @@ h4 {
   }
 
   .header__logo {
-    margin: 0 -17;
+    margin: 0 -17px;
   }
 
   .header__burger {
@@ -1997,7 +1998,7 @@ h4 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin: 0 -17;
+    margin: 0 -17px;
   }
 
   .menu__list li a {
