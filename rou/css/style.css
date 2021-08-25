@@ -300,6 +300,7 @@ h4 {
   opacity: 1;
   visibility: visible;
   overflow: auto;
+  padding-bottom: 40px;
 }
 
 .header__logo {
@@ -1322,6 +1323,7 @@ h4 {
   margin-bottom: 30px;
   -webkit-box-shadow: 5px 11px 28px #999;
           box-shadow: 5px 11px 28px #999;
+  border: 1px solid #999;
   border-radius: 7px;
   padding: 30px;
 }
@@ -1333,6 +1335,7 @@ h4 {
   margin-bottom: 30px;
   -webkit-box-shadow: 5px 11px 18px #999;
           box-shadow: 5px 11px 18px #999;
+  border: 1px solid #999;
   border-radius: 7px;
   padding: 30px;
 }
