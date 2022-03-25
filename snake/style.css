@@ -1,0 +1,32 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height:  100vh;
+		width: 100%;
+		background:  #000;
+}
+
+
+canvas{
+	position: relative;
+	background: url('img/fon.jpg');
+}
+
+.canvas{
+	position: relative;
+}
+
+.score{
+	position: absolute;
+	top: 65px;
+	left: 65px;
+	color: #fff;
+	font-size: 24px;
+}
