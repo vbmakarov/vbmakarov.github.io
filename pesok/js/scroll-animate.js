@@ -20,7 +20,9 @@ if (animItems.length) {
       ) {
         currentAnimElem.classList.add("show");
       } else {
-        currentAnimElem.classList.remove("show");
+        if (!currentAnimElem.classList.contains("no-hide")) {
+          currentAnimElem.classList.remove("show");
+        }
       }
     }
   }
