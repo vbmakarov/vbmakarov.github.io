@@ -18,7 +18,9 @@ if (animItems.length) {
         pageYOffset > currentAnimElemCoordsTop - startAnimPoint &&
         pageYOffset < currentAnimElemCoordsTop + currentAnimElemHeight
       ) {
-        currentAnimElem.classList.add("show");
+        if (!currentAnimElem.classList.contains("show")) {
+          currentAnimElem.classList.add("show");
+        }
       } else {
         if (!currentAnimElem.classList.contains("no-hide")) {
           currentAnimElem.classList.remove("show");
