@@ -542,15 +542,19 @@ h6 {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
+  max-height: 800px;
 }
 
 .main__container {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 60%;
+  left: 45%;
   padding-bottom: 50px;
   padding-left: 50px;
   z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .main__caption {
@@ -1299,6 +1303,13 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   background: #f5f5f5;
   padding: 10px 15px;
@@ -1314,7 +1325,7 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-right: 40px;
+  margin-bottom: 20px;
 }
 
 .feedback__blockquote {
@@ -1436,6 +1447,7 @@ h6 {
 
 .burger__menu nav {
   width: 70%;
+  height: 100vh;
 }
 
 .burger__list {
@@ -1448,6 +1460,7 @@ h6 {
           flex-direction: column;
   background: #000;
   opacity: 0.9;
+  height: 100vh;
 }
 
 .burger__list li a,
@@ -1492,7 +1505,7 @@ h6 {
 
 .modal__body {
   background: #f5f5f5;
-  padding: 50px;
+  padding: 20px;
   position: relative;
 }
 
@@ -1522,7 +1535,7 @@ h6 {
 }
 
 .modal__body form input {
-  padding: 20px 50px;
+  padding: 20px 20px;
   margin-bottom: 15px;
   font-size: 16px;
 }
@@ -1752,6 +1765,23 @@ h6 {
         -ms-flex: 1 1 50%;
             flex: 1 1 50%;
     margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 635px) {
+  .feedback__slide {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .feedback__image {
+    margin-bottom: 0px;
+    margin-right: 10px;
   }
 }
 
@@ -1994,10 +2024,6 @@ h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-  }
-
-  .main__container {
-    padding-top: 80px;
   }
 
   .catalog__description {
